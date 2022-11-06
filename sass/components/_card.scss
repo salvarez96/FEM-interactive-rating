@@ -1,0 +1,43 @@
+.card {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: $dark-blue;
+  &__icon {
+    width: max-content;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba($medium-grey, 0.3);
+    background-image: url('../images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+  }
+  &__title {
+    margin-top: calc(20rem / 16);
+    color: $white;
+  }
+  &__text {
+    margin-top: calc(20rem / 16);
+    color: $light-grey;
+  }
+  &__submit {
+    margin-top: calc(20rem / 16);
+    padding: calc(12rem / 16) 0;
+    border: 0;
+    border-radius: 20px;
+    background-color: $orange;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: calc(2rem / 16);
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      color: $orange;
+    }
+  }
+}

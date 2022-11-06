@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(20rem / 16);
+  &__button {
+    width: calc(40rem / 16);
+    height: calc(40rem / 16);
+    border: 0;
+    border-radius: calc(20rem / 16);
+    font-family: inherit;
+    color: $light-grey;
+    background-color: rgba($medium-grey, 0.3);
+    &:hover {
+      cursor: pointer;
+      color: $white;
+      background-color: $orange;
+    }
+  }
+}
