@@ -1,0 +1,15 @@
+include ./components/variables.pug
+doctype html
+html(lang="en")
+  include ./components/head.pug
+  body
+    main
+      section.card
+        i.card__icon
+        h1.card__title #{ratingTitle}
+        p.card__text #{ratingDescription}
+        div.rating
+          while ratingNumber <= 5
+            button(type='button').rating__button #{ratingNumber++}
+        button(type='button').card__submit Submit
+    script(src="../src/main.js") 
