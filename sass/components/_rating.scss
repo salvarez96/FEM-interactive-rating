@@ -7,13 +7,27 @@
     height: calc(40rem / 16);
     border: 0;
     border-radius: calc(20rem / 16);
+    background-color: rgba($medium-grey, 0.2);
     font-family: inherit;
+    font-size: calc(15rem / 16);
     color: $light-grey;
-    background-color: rgba($medium-grey, 0.3);
     &:hover {
       cursor: pointer;
       color: $white;
       background-color: $orange;
     }
+  }
+}
+
+.rating__button--selected {
+  background-color: $medium-grey;
+  color: $white;
+}
+
+@media (min-width: 600px) {
+  .rating__button {
+    width: calc(48rem / 16);
+    height: calc(48rem / 16);
+    border-radius: calc(24rem / 16);
   }
 }

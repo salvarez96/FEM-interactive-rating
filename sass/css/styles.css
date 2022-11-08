@@ -35,7 +35,7 @@ main {
   width: max-content;
   border-radius: 20px;
   padding: 20px;
-  background-color: rgba(124, 135, 152, 0.3);
+  background-color: rgba(124, 135, 152, 0.2);
   background-image: url("../images/icon-star.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -66,6 +66,12 @@ main {
   color: hsl(25deg, 97%, 53%);
 }
 
+@media (min-width: 600px) {
+  .card {
+    max-width: 400px;
+    padding: 20px 25px;
+  }
+}
 .rating {
   display: flex;
   justify-content: space-between;
@@ -76,12 +82,26 @@ main {
   height: 2.5rem;
   border: 0;
   border-radius: 1.25rem;
+  background-color: rgba(124, 135, 152, 0.2);
   font-family: inherit;
+  font-size: 0.9375rem;
   color: hsl(217deg, 12%, 63%);
-  background-color: rgba(124, 135, 152, 0.3);
 }
 .rating__button:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
+}
+
+.rating__button--selected {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media (min-width: 600px) {
+  .rating__button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
