@@ -24,7 +24,7 @@ main {
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 35px 20px;
   margin: 0 auto;
   border-radius: 20px;
   background-color: hsl(213deg, 19%, 18%);
@@ -69,7 +69,7 @@ main {
 @media (min-width: 600px) {
   .card {
     max-width: 400px;
-    padding: 20px 25px;
+    padding: 35px 30px;
   }
 }
 .rating {
@@ -104,4 +104,26 @@ main {
     height: 3rem;
     border-radius: 1.5rem;
   }
+}
+.thankYou {
+  text-align: center;
+}
+.thankYou__icon {
+  background-image: url("../images/illustration-thank-you.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 120px;
+  margin: 0 auto;
+}
+.thankYou__rating {
+  padding: 0.5rem 0.75rem;
+  padding-top: 0.6875rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1.25rem auto 0.625rem;
+  border-radius: 20px;
+  background-color: rgba(124, 135, 152, 0.2);
+  color: hsl(25deg, 97%, 53%);
 }/*# sourceMappingURL=styles.css.map */

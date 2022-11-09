@@ -1,0 +1,20 @@
+.thankYou {
+  text-align: center;
+  &__icon {
+    background-image: url('../images/illustration-thank-you.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  &__rating {
+    padding: calc(8rem / 16) calc(12rem / 16);
+    padding-top: (11rem / 16);
+    width: max-content;
+    margin: calc(20rem / 16) auto calc(10rem / 16);
+    border-radius: 20px;
+    background-color: rgba($medium-grey, 0.2);
+    color: $orange;
+  }
+}
